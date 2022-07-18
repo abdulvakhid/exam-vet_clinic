@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vet clinic</title>
+    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+
+    <!-- header part begin  -->
+    <header class="site-header">
+
+        <div class="site-header__inner header-box">
+            <div class="container">
+                <div class="header-box__inner-box">
+                    <address class="header-box__address">
+                        г. Мариуполь, проспект Победы, 48а
+                    </address>
+
+                    <ul class="header-box__list">
+                        <li class="header-box__item">
+                            <a class="header-box__link" href="tel:0676347574">(067) 634 -75 - 74</a>
+                        </li>
+                        <li class="header-box__item">
+                            <a class="header-box__link" href="tel:0637570131">(0637) 57 - 01 - 31</a>
+                        </li>
+                        <li class="header-box__item">
+                            <a class="header-box__link" href="0982664389">(098) 266 - 43 - 89</a>
+                        </li>
+                    </ul>
+
+                    <ul class="header-box__time-list">
+                        <li class="header-box__time-item">
+                            <time datetime="2022-07-18 08:00"> <strong>Пн - Пт</strong> 8:00 - 18:00</time>
+                        </li>
+                        <li class="header-box__time-item">
+                            <time datetime="2022-07-18 08:00">
+                                <strong>Сб - Вс </strong> 8:00 - 14:00</time>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="site-header__continue">
+            <div class="container">
+                <div class="site-header__nav-box">
+                    <div class="site-header__nav sitenav">
+                        <a class="site-header__logo-link" href="./index.html">
+                            <svg class="site-header__logo-img" width="178" height="87" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.95 37.881 0 32.836l11.854-5.474c.337-16.378 16.16-19.929 22.722-19.293 6.563.636 25.654 12.345 17.961 36.262-2.62 8.15-2.002 29.24 28.586 27.292-2.297 4.33-13.082 22.29-48.182 10.864C23.21 79.32 9.344 63.64 10.95 37.881Z"
+                                    fill="#FFBD54" />
+                                <path
+                                    d="M110.818 32.703c.96-11.6-5.053-22.116-8.576-24.538-3.288-2.26-3.3 7.495-6.227 12.845a36.95 36.95 0 0 0-14.235-2.828A36.936 36.936 0 0 0 67.57 21c-2.922-5.353-2.937-15.095-6.221-12.837-3.52 2.412-9.521 12.921-8.578 24.5-3.622 5.081-5.736 11.166-5.736 17.713 0 17.78 15.556 30.967 34.745 30.967s34.745-13.187 34.745-30.967c0-6.529-2.104-12.6-5.707-17.673Z"
+                                    fill="#78C0DE" />
+                                <path
+                                    d="M109.119 52.411c.898-15.917 6.977-18.117 7.775-27.85C118 11.08 127.285 1.28 131.872.074c4.587-1.204-1.264 12.474 2.847 17.117 8.6-2.981 14.061-.443 18.374 4.223 4.316 4.668-1.317 9.125 7.13 7.93 3.475-.494 7.087-.378 10.11.392.286-.189.595-.35.931-.466 2.378-.824 5.052.662 5.975 3.321a5.513 5.513 0 0 1 .188 2.977c.105.513.149 1.058.116 1.637-.466 8.182-10.549 19.452-16.813 20.273-6.264.822-12.915-.26-13.085 12.273-.225 16.693-37.176 23.3-46.227 6.353 6.624-4.792 7.016-11.538 7.701-23.694Z"
+                                    fill="#000" />
+                                <path
+                                    d="M136.872 22.14c4.325.382 7.761-1.916 11.106-4.492-1.345-.165-2.831-.176-4.498.014-2.507-4.53 4.754-14.616.794-14.47-3.569.127-12.703 5.018-16.914 13.883 3.056 2.054 5.488 5.283 9.512 5.065Z"
+                                    fill="#000" />
+                                <path
+                                    d="M38.142 34.435a3.659 3.659 0 0 0-1.579-.12c-1.547.22-2.854 1.433-3.244 3l-3.47 12.961-6.918-11.498c-.868-1.383-2.474-2.167-4-1.95-.52.075-1 .26-1.43.55-.97.6-1.64 1.501-1.885 2.544a3.777 3.777 0 0 0 .484 2.893l11.702 19.648c.084.169.215.414.443.614a1.073 1.073 0 0 0 .276.223l.104.149.144.109c.052.039.11.08.178.118l.028.194.494.165.151.113 1.12.242.333.063.167-.025c.285.015.496-.015.618-.032.166-.023.384-.055.653-.15l.252-.035.206-.142 1.006-.646.206-.275c.06-.066.147-.162.236-.3.07-.08.13-.172.174-.27l.09-.147.016-.028c.098-.105.176-.227.232-.36.1-.185.18-.407.225-.618l5.848-22.135a3.804 3.804 0 0 0-.336-2.938c-.532-.942-1.439-1.626-2.524-1.916ZM81.579 34.28c-9.318.163-16.82 8.104-16.722 17.72.24 9.687 7.847 17.202 17.32 17.105h.01c4.986-.087 9.022-1.661 12.331-4.81.806-.762 1.245-1.73 1.27-2.8.034-1.375-.627-2.58-1.269-3.262-.69-.79-1.902-1.248-3.256-1.225-1.36.024-2.614.534-3.465 1.401-1.092.82-2.993 1.367-4.877 1.4a9.819 9.819 0 0 1-.78-.017c-1.968-.134-4.203-1.12-5.312-2.344l-.09-.09c-.504-.461-.953-1.115-1.304-1.89l18.592-.324c2.422-.042 4.289-1.547 4.596-3.681.072-.268.085-.561.08-.899l-.01-.4c-.719-9.365-7.917-16.044-17.114-15.883Zm7.64 12.785-14.177.248c.97-1.92 3.116-3.967 6.668-4.227 3.64.256 6.226 2.145 7.509 3.979ZM138.074 49.682c2.535.265 4.897-1.624 5.158-4.125.264-2.546-1.616-4.834-4.194-5.103l-.242-.025.785-7.53c.27-2.587-1.545-4.825-4.132-5.095-2.622-.274-4.887 1.539-5.157 4.126l-.787 7.528-.485-.05c-2.588-.27-4.827 1.545-5.097 4.133a4.646 4.646 0 0 0 4.133 5.096l.485.05-1.635 15.665c-.463 4.418 2.757 8.39 7.177 8.85 2.587.271 4.825-1.543 5.097-4.132.227-2.172-.979-4.099-2.87-4.85l1.52-14.564.244.026Z"
+                                    fill="currentColor" /></svg>
+                        </a>
+
+                    </div>
+
+                    <nav class="sitenav">
+                        <ul class="sitenav__list">
+                            <li class="sitenav__item">
+                                <a class="sitenav__link" href="./index.html">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="sitenav__item">
+                                <a class="sitenav__link" href="#">
+                                    О Клинике
+                                </a>
+                            </li>
+                            <li class="sitenav__item">
+                                <a class="sitenav__link" href="#">
+                                    Наши Услуги
+                                </a>
+                            </li>
+                            <li class="sitenav__item">
+                                <a class="sitenav__link" href="#">
+                                    Полезные Статьи
+                                </a>
+                            </li>
+                            <li class="sitenav__item">
+                                <a class="sitenav__link" href="#">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li class="sitenav__item">
+                                <a class="sitenav__link" href="#">
+                                    Контакты
+                                </a>
+                            </li>
+
+
+                        </ul>
+                    </nav>
+
+                    <a class="site-header__question-link" href="#">
+                        Задать вопрос
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- header part end  -->
+
+    <!-- main part begin  -->
+    <main class="site-main">
+        <!-- hero section begin  -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__box">
+                    <img class="hero__img-group" src="./images/herobg-group.png" width="829" height="809" alt="animals"
+                        srcset="./images/herobg-group.png 1x, ./images/herobg-group@2x.png 2x">
+
+                    <div class="hero__content">
+                        <h1 class="hero__topic">Мы заботимся о <span class="hero__topic-blue">ваших питомцах!</span>
+                        </h1>
+                        <div class="hero__text-box">
+                            <p class="hero__text">
+                                Вам и Вашему любимцу множество услуг по диагностике, профилактике заболеваний по лечению
+                                и
+                                уходу за Вашими животными. Профессионалы работающие в нашей клинике сделают все для
+                                того,
+                                чтобы быстро, эффективно и максимально безболезненно выполнить любие процедуры, которые
+                                необходимы Вашему домашнему любимцу.
+                            </p>
+                        </div>
+
+                        <a class="hero__link" href="#">Наши услуги</a>
+                    </div>
+
+                    <img class="hero__img-alone" src="./images/herobg.png" width="342" height="442"
+                        srcset="./images/herobg.png 1x, ./images/herobg@2x.png 2x" alt="bird">
+
+                </div>
+            </div>
+        </section>
+        <!-- hero section end -->
+
+        <!-- quote section begin  -->
+        <section class="quote">
+            <div class="container">
+                <div class="quote__box">
+                    <blockquote class="quote__text">
+                        Наша ветеринарная клиника готова уделить максимум внимания Вам и Вашему питамцу. Здоровье и
+                        благополучие Ваших животных очень важно для нас и мы стремимся оказать наилучшую возможную
+                        ветеринарную помощь.
+                    </blockquote>
+
+                    <h2 class="quote__author">
+                        Оржоникидзевская Ветеринарная клиника
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <!-- quote section end  -->
+
+        <!-- service section begin  -->
+
+        <section class="service">
+            <div class="service__icon-box">
+                <img class="service__left-icon" src="./images/left-icon.svg" width="14" height="26"
+                    alt="arrow icon left">
+            </div>
+
+            <div class="container">
+                <h2 class="service__topic">Наши услуги</h2>
+                <ul class="service__list">
+                    <li class="service__item">
+                        <a class="service__link" href="#">
+                            Первичный осмотр
+                        </a>
+                    </li>
+                    <li class="service__item">
+                        <a class="service__link" href="#">
+                            Первичный осмотр
+                        </a>
+                    </li>
+                    <li class="service__item">
+                        <a class="service__link" href="#">
+                            Хирургическое вмешательство
+                        </a>
+                    </li>
+                    <li class="service__item">
+                        <a class="service__link" href="#">
+                            Дерматология
+                        </a>
+                    </li>
+                    <li class="service__item">
+                        <a class="service__link" href="#">
+                            Лабораторная диагностика
+                        </a>
+                    </li>
+                    <li class="service__item">
+                        <a class="service__link" href="#">
+                            Офтальмология
+                        </a>
+                    </li>
+                    <li class="service__item">
+                        <a class="service__link" href="#">
+                            УЗИ
+                            диагностика
+                        </a>
+                    </li>
+                    <li class="service__item">
+                        <a class="service__link" href="#">
+                            Чипирование
+                        </a>
+                    </li>
+                    <li class="service__item">
+                        <a class="service__link" href="#">
+                            Международные паспорта
+                        </a>
+                    </li>
+                    <li class="service__item">
+                        <a class="service__link" href="#">
+                            Вакцинация
+                        </a>
+                    </li>
+                    <li class="service__item">
+                        <a class="service__link" href="#">
+                            Стоматология
+                        </a>
+                    </li>
+                    <li class="service__item">
+                        <a class="service__link" href="#">
+                            Вызов на дом
+                        </a>
+                    </li>
+                </ul>
+                <div class="service__content item-content">
+                    <img class="item-content__img" src="./images/cat.png" width="590" height="332" alt="cat"
+                        srcset="./images/cat.png 1x, ./images/cat@2x.png 2x">
+                    <div class="item-content__box">
+                        <h4 class="item-content__title">Первичный осмотр</h4>
+                        <p class="item-content__text">По условиям акции в нашей клинике предоставляетса безплатная
+                            услуга “Дневной стационар” которая позволяет экономить Ваше время. Вы имеете возможность
+                            оставить у нас.</p>
+                        <p class="item-content__text item-content__text--active">По условиям акции в нашей клинике
+                            предоставляетса безплатная услуга “Дневной стационар” которая позволяет экономить Ваше
+                            время. Вы имеете возможность оставить у нас.</p>
+                        <ul class="item-content__list">
+                            <li class="item-content__item item-content__item--yellow">
+                                <a class="item-content__link" href="#">
+                                    Узнать цену
+                                </a>
+                            </li>
+                            <li class="item-content__item item-content__item--black">
+                                <a class="item-content__link" href="#">
+                                    Записаться на приём
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="service__icon">
+                <img src="./images/right-icon.svg" width="14" height="26" alt="arrow right icon">
+            </div>
+        </section>
+        <!-- service section end  -->
+
+        <!-- info section begin  -->
+        <section class="info">
+            <div class="info__background">
+                <div class="container">
+                    <div class="info__content">
+                        <div class="info__box">
+                            <h2 class="info__topic">Будь в курсе событий</h2>
+                            <form class="info__form" action="https://echo.htmlacademy.ru/courses" method="post"
+                                autocomplete="off">
+                                <input class="info__input" type="email" name="your_email"
+                                    aria-label="enter tour email adress" minlength="5"
+                                    placeholder="Укажите Ваш email адрес">
+
+                                <button class="info__btn" type="submit">Подписаться</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- info section end  -->
+
+        <!-- cite section begin  -->
+        <section class="cite">
+            <div class="container">
+                <h2 class="cite__topic">Полезные статьи</h2>
+                <ul class="cite__list">
+                    <li class="cite__item">
+                        <img class="cite__img" src="./images/catopenmouth.png" width="305" height="180"
+                            alt="cat open mouth" srcset="./images/catopenmouth.png 1x, ./images/catopenmouth@2x.png 2x">
+                        <div class="cite__content">
+                            <div class="cite__box">
+                                <ul class="cite__taglist">
+                                    <li class="cite__tag-item">
+                                        #собака
+                                    </li>
+                                    <li class="cite__tag-item">
+                                        #дом
+                                    </li>
+                                    <li class="cite__tag-item">
+                                        #уход
+                                    </li>
+                                </ul>
+                                <time class="cite__time" datetime="2022-07-18"> 28.08.2020</time>
+                            </div>
+
+                            <div class="cite__item-context">
+                                <h3 class="cite__item-title">
+                                    Ультразвуковая чистка зубов
+                                </h3>
+                                <p class="cite__item-text">
+                                    Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый
+                                    зверек
+                                    берется от ...
+                                </p>
+                            </div>
+
+                            <a class="cite__item-link" href="#">
+                                Читать больше
+                            </a>
+                        </div>
+
+                    </li>
+
+                    <li class="cite__item cite__item--active">
+
+                        <img class="cite__img cite__img--active" src="./images/runningdogs.png" width="305" height="180"
+                            alt="runningdogs" srcset="./images/runningdogs.png 1x, ./images/runningdogs@2x.png 2x">
+
+                        <div class="cite__content ">
+                            <div class="cite__box">
+                                <ul class="cite__taglist">
+                                    <li class="cite__tag-item">
+                                        #собака
+                                    </li>
+                                    <li class="cite__tag-item">
+                                        #дом
+                                    </li>
+                                    <li class="cite__tag-item">
+                                        #уход
+                                    </li>
+                                </ul>
+                                <time class="cite__time" datetime="2022-07-18"> 28.08.2020</time>
+                            </div>
+
+                            <div class="cite__item-context">
+                                <h3 class="cite__item-title">
+                                    Перед тем как завести собаку
+                                </h3>
+                                <p class="cite__item-text">
+                                    Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый
+                                    зверек берется от ...
+                                </p>
+                            </div>
+
+                            <a class="cite__item-link" href="#">
+                                Читать больше
+                            </a>
+                        </div>
+
+                    </li>
+
+                    <li class="cite__item">
+                        <img class="cite__img" src="./images/doctoranddog.png" width="305" height="180"
+                            alt="doctor and dog" srcset="./images/doctoranddog.png 1x, ./images/doctoranddog@2x.png 2x">
+                        <div class="cite__content">
+                            <div class="cite__box">
+                                <ul class="cite__taglist">
+                                    <li class="cite__tag-item">
+                                        #собака
+                                    </li>
+                                    <li class="cite__tag-item">
+                                        #дом
+                                    </li>
+                                    <li class="cite__tag-item">
+                                        #уход
+                                    </li>
+                                </ul>
+                                <time class="cite__time" datetime="2022-07-18"> 21.07.2020</time>
+                            </div>
+
+                            <div class="cite__item-context">
+                                <h3 class="cite__item-title">
+                                    Когда привавать питомца?
+                                </h3>
+                                <p class="cite__item-text">
+                                    Появление в доме котенка приятное и радосное событие. Но не всегда этот пушистый
+                                    зверек берется от ...
+                                </p>
+                            </div>
+
+                            <a class="cite__item-link" href="#">
+                                Читать больше
+                            </a>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- cite section end  -->
+
+        <!-- connection section end  -->
+        <section class="connection">
+            <div class="connection__container">
+                <div class="connection__box">
+
+                    <div class="connection__map">
+                        <iframe class="connection__iframe"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6927.81641810242!2d69.19927557482343!3d41.284072622641816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba578f4f58d%3A0xd7a2ecf23413b7a0!2sNajot%20Ta&#39;lim%20Chilonzor%20Filial!5e0!3m2!1sru!2s!4v1658156514157!5m2!1sru!2s"
+                            width="847" height="649" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="connection__form-box">
+                        <div class="container">
+                            <div class="connection__context">
+                                <div class="connection__content">
+                                    <h2 class="connection__topic">
+                                        Обратная связь
+                                    </h2>
+                                    <p class="connection__text">
+                                        При возникновении вопросов по поводу работы клиники или консультаций, заполните
+                                        форму ниже:
+                                    </p>
+                                </div>
+                                <form class="connection__fom" action="https://echo.htmlacademy.ru/courses" method="post"
+                                    autocomplete="off">
+
+                                    <input class="connection__input-name" type="text" name="your_name"
+                                        aria-label="enter your name" minlength="2" placeholder="Ваше имя" required>
+
+                                    <input class="connection__input-email" type="email" name="your_email"
+                                        aria-label="enter your email address" minlength="5"
+                                        placeholder="Email для обратной связи" required>
+
+                                    <textarea class="connection__massage" name="user_opinion"
+                                        aria-label="enter your question" cols="30" rows="10" minlength="3"
+                                        placeholder="Опишите Ваш вопрос."></textarea>
+
+                                    <button class="connection__btn" type="submit">Задать нам вопрос</button>
+
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+        <!-- connection section begin  -->
+    </main>
+    <!-- main part end -->
+
+    <!-- footer part begin -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer__box">
+                <div class="site-footer__content">
+                    <a class="site-footer__logo-link" href="./index.html">
+                        <svg class="site-footer__logo" width="178" height="80" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.95 37.881 0 32.836l11.854-5.474c.337-16.378 16.16-19.929 22.722-19.293 6.563.636 25.654 12.345 17.961 36.262-2.62 8.15-2.002 29.24 28.586 27.292-2.297 4.33-13.082 22.29-48.182 10.864C23.21 79.32 9.344 63.64 10.95 37.881Z"
+                                fill="#FFBD54" />
+                            <path
+                                d="M110.818 32.703c.96-11.6-5.053-22.116-8.576-24.538-3.288-2.26-3.3 7.495-6.227 12.845a36.95 36.95 0 0 0-14.235-2.828A36.936 36.936 0 0 0 67.57 21c-2.922-5.353-2.937-15.095-6.221-12.837-3.52 2.412-9.521 12.921-8.578 24.5-3.622 5.081-5.736 11.166-5.736 17.713 0 17.78 15.556 30.967 34.745 30.967s34.745-13.187 34.745-30.967c0-6.529-2.104-12.6-5.707-17.673Z"
+                                fill="#78C0DE" />
+                            <path
+                                d="M109.119 52.411c.898-15.917 6.977-18.117 7.775-27.85C118 11.08 127.285 1.28 131.872.074c4.587-1.204-1.264 12.474 2.847 17.117 8.6-2.981 14.061-.443 18.374 4.223 4.316 4.668-1.317 9.125 7.13 7.93 3.475-.494 7.087-.378 10.11.392.286-.189.595-.35.931-.466 2.378-.824 5.052.662 5.975 3.321a5.513 5.513 0 0 1 .188 2.977c.105.513.149 1.058.116 1.637-.466 8.182-10.549 19.452-16.813 20.273-6.264.822-12.915-.26-13.085 12.273-.225 16.693-37.176 23.3-46.227 6.353 6.624-4.792 7.016-11.538 7.701-23.694Z"
+                                fill="#000" />
+                            <path
+                                d="M136.872 22.14c4.325.382 7.761-1.916 11.106-4.492-1.345-.165-2.831-.176-4.498.014-2.507-4.53 4.754-14.616.794-14.47-3.569.127-12.703 5.018-16.914 13.883 3.056 2.054 5.488 5.283 9.512 5.065Z"
+                                fill="#000" />
+                            <path
+                                d="M38.142 34.435a3.659 3.659 0 0 0-1.579-.12c-1.547.22-2.854 1.433-3.244 3l-3.47 12.961-6.918-11.498c-.868-1.383-2.474-2.167-4-1.95-.52.075-1 .26-1.43.55-.97.6-1.64 1.501-1.885 2.544a3.777 3.777 0 0 0 .484 2.893l11.702 19.648c.084.169.215.414.443.614a1.073 1.073 0 0 0 .276.223l.104.149.144.109c.052.039.11.08.178.118l.028.194.494.165.151.113 1.12.242.333.063.167-.025c.285.015.496-.015.618-.032.166-.023.384-.055.653-.15l.252-.035.206-.142 1.006-.646.206-.275c.06-.066.147-.162.236-.3.07-.08.13-.172.174-.27l.09-.147.016-.028c.098-.105.176-.227.232-.36.1-.185.18-.407.225-.618l5.848-22.135a3.804 3.804 0 0 0-.336-2.938c-.532-.942-1.439-1.626-2.524-1.916ZM81.579 34.28c-9.318.163-16.82 8.104-16.722 17.72.24 9.687 7.847 17.202 17.32 17.105h.01c4.986-.087 9.022-1.661 12.331-4.81.806-.762 1.245-1.73 1.27-2.8.034-1.375-.627-2.58-1.269-3.262-.69-.79-1.902-1.248-3.256-1.225-1.36.024-2.614.534-3.465 1.401-1.092.82-2.993 1.367-4.877 1.4a9.819 9.819 0 0 1-.78-.017c-1.968-.134-4.203-1.12-5.312-2.344l-.09-.09c-.504-.461-.953-1.115-1.304-1.89l18.592-.324c2.422-.042 4.289-1.547 4.596-3.681.072-.268.085-.561.08-.899l-.01-.4c-.719-9.365-7.917-16.044-17.114-15.883Zm7.64 12.785-14.177.248c.97-1.92 3.116-3.967 6.668-4.227 3.64.256 6.226 2.145 7.509 3.979ZM138.074 49.682c2.535.265 4.897-1.624 5.158-4.125.264-2.546-1.616-4.834-4.194-5.103l-.242-.025.785-7.53c.27-2.587-1.545-4.825-4.132-5.095-2.622-.274-4.887 1.539-5.157 4.126l-.787 7.528-.485-.05c-2.588-.27-4.827 1.545-5.097 4.133a4.646 4.646 0 0 0 4.133 5.096l.485.05-1.635 15.665c-.463 4.418 2.757 8.39 7.177 8.85 2.587.271 4.825-1.543 5.097-4.132.227-2.172-.979-4.099-2.87-4.85l1.52-14.564.244.026Z"
+                                fill="#fff" /></svg>
+                    </a>
+
+                    <ul class="site-footer__list site-footer__list--active">
+                        <li class="site-footer__item">
+                            <a class="site-footer__link" href="./index.html">Главная</a>
+                        </li>
+                        <li class="site-footer__item">
+                            <a class="site-footer__link" href="./index.html">О Клинике</a>
+                        </li>
+                        <li class="site-footer__item">
+                            <a class="site-footer__link" href="./index.html">Наши Услуги</a>
+                        </li>
+                    </ul>
+
+                    <ul class="site-footer__list">
+
+                        <li class="site-footer__item">
+                            <a class="site-footer__link" href="./index.html">Полезные Статьи</a>
+                        </li>
+                        <li class="site-footer__item">
+                            <a class="site-footer__link" href="./index.html">FAQ</a>
+                        </li>
+                        <li class="site-footer__item">
+                            <a class="site-footer__link" href="./index.html">Контакты</a>
+                        </li>
+                    </ul>
+
+                    <ul class="site-footer__time-list">
+                        <li class="site-footer__time-item">
+                            <time datetime="2022-07-18"> <strong>Пн - Пт</strong> 8:00 - 18:00</time>
+                        </li>
+                        <li class="site-footer__time-item">
+                            <time datetime="2022-07-18"> <strong> Сб - Вс </strong>8:00 - 14:00</time>
+                        </li>
+                    </ul>
+
+                    <div class="site-footer__adres-box">
+                        <a class="site-footer__addres-link" href="#">
+                            <address class="site-footer__adress">
+                                г. Мариуполь, проспект Победы, 48а
+                            </address>
+                        </a>
+
+                    </div>
+
+                    <ul class="site-footer__phone-list">
+                        <li class="site-footer__phone-item">
+                            <a class="site-footer__phone-link" href="tel:0676347574">(067) 634 -75 - 74</a>
+                        </li>
+                        <li class="site-footer__phone-item">
+                            <a class="site-footer__phone-link" href="tel:0637570131">(0637) 57 - 01 - 31</a>
+                        </li>
+                        <li class="site-footer__phone-item">
+                            <a class="site-footer__phone-link" href="tel:0982664389">(098) 266 - 43 - 89</a>
+                        </li>
+                    </ul>
+                </div>
+                <span class="site-footer__desc">
+                    © 2020 example. All Rights Reserved.
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- footer part end  -->
+</body>
+
+</html>
