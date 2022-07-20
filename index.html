@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vet clinic</title>
     <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
-    <!-- <link rel="stylesheet" href="./css/main.css"> -->
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="./css/main.min.css"> -->
 </head>
 
 <body>
@@ -88,7 +88,7 @@
                                 </a>
                             </li>
                             <li class="sitenav__item">
-                                <a class="sitenav__link" href="#">
+                                <a class="sitenav__link" href="./service.html">
                                     Наши Услуги
                                 </a>
                             </li>
@@ -107,14 +107,12 @@
                                     Контакты
                                 </a>
                             </li>
-
-
                         </ul>
                     </nav>
 
-                    <a class="site-header__question-link" href="#">
+                    <button class="site-header__question-link site-header__question-link--openmodal" type="submit">
                         Задать вопрос
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -175,7 +173,6 @@
         <!-- quote section end  -->
 
         <!-- service section begin  -->
-
         <section class="service">
             <div class="service__icon-box">
                 <img class="service__left-icon" src="./images/left-icon.svg" width="14" height="26"
@@ -472,8 +469,6 @@
                 </div>
             </div>
 
-
-
         </section>
         <!-- connection section begin  -->
     </main>
@@ -509,23 +504,23 @@
                             <a class="site-footer__link" href="./index.html">Главная</a>
                         </li>
                         <li class="site-footer__item">
-                            <a class="site-footer__link" href="./index.html">О Клинике</a>
+                            <a class="site-footer__link" href="#">О Клинике</a>
                         </li>
                         <li class="site-footer__item">
-                            <a class="site-footer__link" href="./index.html">Наши Услуги</a>
+                            <a class="site-footer__link" href="./service.html">Наши Услуги</a>
                         </li>
                     </ul>
 
                     <ul class="site-footer__list">
 
                         <li class="site-footer__item">
-                            <a class="site-footer__link" href="./index.html">Полезные Статьи</a>
+                            <a class="site-footer__link" href="#">Полезные Статьи</a>
                         </li>
                         <li class="site-footer__item">
-                            <a class="site-footer__link" href="./index.html">FAQ</a>
+                            <a class="site-footer__link" href="#">FAQ</a>
                         </li>
                         <li class="site-footer__item">
-                            <a class="site-footer__link" href="./index.html">Контакты</a>
+                            <a class="site-footer__link" href="#">Контакты</a>
                         </li>
                     </ul>
 
@@ -566,6 +561,46 @@
         </div>
     </footer>
     <!-- footer part end  -->
+
+    <!-- modal part begin  -->
+    <div class="modal">
+        <div class="modal__window">
+            <div class="modal__login">
+                <p class="modal__login-title">Авторизация:</p>
+                <a class="modal__link-google" href="#">
+                    Войти через Google
+                </a>
+                <a class="modal__link-meta" href="#">
+                    Войти через Facebook
+                </a>
+            </div>
+
+            <div class="modal___content">
+                <h2 class="modal__topic">
+                    Задать вопрос
+                </h2>
+                <form class="connection__fom" action="https://echo.htmlacademy.ru/courses" method="post"
+                    autocomplete="off">
+
+                    <input class="connection__input-name" type="text" name="your_name" aria-label="enter your name"
+                        minlength="2" placeholder="Ваше имя" required>
+
+                    <textarea class="connection__massage" name="user_opinion" aria-label="enter your question" cols="30"
+                        rows="10" minlength="3" placeholder="Опишите Ваш вопрос."></textarea>
+
+                    <button class="connection__btn--active" type="submit">Отправить </button>
+
+                    <button class="connection__close" type="button"></button>
+                </form>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- modal part end  -->
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
