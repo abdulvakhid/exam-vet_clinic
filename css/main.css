@@ -1869,3 +1869,422 @@ input:not(:placeholder-shown):not(:focus):invalid {
     border: transparent;
     background-color: transparent;
 }
+
+
+
+
+/* FAQ PAGE CSS  */
+
+.faq {
+    padding-top: 118px;
+    padding-bottom: 270px;
+    background-color: #E5E5E5;
+    background-image: url("../images/faq-cat.png"), url("../images/faq-fyingbird.png");
+    background-repeat: no-repeat;
+    background-size: 569px 466px, 654px 640px;
+    background-position: calc(50% + 492px) calc(49px), calc(50% + 574px) calc(1074px);
+}
+
+.faq__content {
+    width: 447px;
+    padding-left: 70px;
+}
+
+.faq__topic {
+    margin: 0;
+    margin-bottom: 27px;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 64px;
+    color: var(--main-color);
+}
+
+.faq__text {
+    margin: 0;
+    margin-bottom: 35px;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+
+.faq__link {
+    display: inline-block;
+    margin-bottom: 63px;
+    padding: 15px 38px 14px 68px;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    background-color: #78C0DE;
+    border-radius: 3px;
+    text-decoration: none;
+    position: relative;
+}
+
+.faq__link::before {
+    content: "";
+    background-image: url("../images/document.svg");
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 13px;
+    left: 38px;
+}
+
+.faq__list {
+    margin: 0;
+    padding: 0;
+    padding-left: 70px;
+    list-style: none;
+}
+
+.faq__item {
+    width: 752px;
+    padding: 31px 112px 32px 65px;
+    background-color: #FFFFFF;
+    border: 1px solid #F3F3F3;
+    border-radius: 5px;
+
+}
+
+.faq__item:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.faq__item-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.faq__item-time {
+    margin-left: 20px;
+    margin-right: 28px;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+    position: relative;
+}
+
+.faq__item-time::before {
+    content: "";
+    background-image: url("../images/pet-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 22px;
+    height: 19px;
+    position: absolute;
+    top: 0px;
+    left: -25px;
+}
+
+.faq__item-tag {
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #78C0DE;
+}
+
+.faq__summary {
+    margin-bottom: 23px;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+    position: relative;
+}
+
+.faq__summary::after {
+    display: block;
+    content: "";
+    background-image: url(../images/faq-sum-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 9px;
+    position: absolute;
+    top: 8px;
+    right: 6px;
+}
+
+.faq__detail[open] .faq__summary::after {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+.faq__detail[open] .faq__summary--blue::after {
+    transform: none;
+}
+
+.faq__summary-text {
+    margin: 0;
+    padding-bottom: 33px;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+
+.faq__item--blue {
+    opacity: 0.6;
+}
+
+.faq__item-time--blue::before {
+    content: "";
+    background-image: url("../images/petblue.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 22px;
+    height: 19px;
+    position: absolute;
+    top: 0px;
+    left: -25px;
+}
+
+.faq__summary--blue::after {
+    display: block;
+    content: "";
+    background-image: url(../images/faq-clock.svg);
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 0;
+    right: 6px;
+}
+
+
+/* CONTACT PAGE CSS  */
+
+
+.contact {
+    padding-top: 110px;
+    background-image: url("../images/contact-dog.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 430px) calc(50% + 12px);
+
+}
+
+.contact__content {
+    width: 447px;
+    margin-bottom: 117px;
+    padding-left: 70px;
+}
+
+.contact__topic {
+    margin: 0;
+    margin-bottom: 27px;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 64px;
+    color: var(--main-color);
+}
+
+.contact__text {
+    margin: 0;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #949494;
+}
+
+
+.contact__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding-left: 70px;
+    list-style: none;
+}
+
+.contact__item {
+    width: 153px;
+    padding-top: 103px;
+    position: relative;
+}
+
+.contact__item:not(:last-child) {
+    margin-right: 118px;
+}
+
+.contact__item::before {
+    content: "";
+    background-repeat: no-repeat;
+    width: 73px;
+    height: 73px;
+    position: absolute;
+    top: 3px;
+    right: 76px;
+}
+
+.contact__item:nth-child(1):before {
+    background-image: url(../images/contact-location.svg);
+}
+
+.contact__item:nth-child(2):before {
+    background-image: url(../images/contact-calendar.svg);
+}
+
+.contact__item:nth-child(3):before {
+    background-image: url(../images/contact-phone.svg);
+}
+
+.contact__adress-link {
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.contact__date-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact__date-item {
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: var(--main-color);
+}
+
+.contact__date-item:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.contact__tel-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact__tel-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.contact__tel-link {
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: right;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.contact__tel-link:hover {
+    color: var(--yellow-color);
+}
+
+.contact__tel-link:active {
+    color: var(--main-color);
+    opacity: 0.6;
+}
+
+/* search section css  */
+
+.search {
+    padding-bottom: 206px;
+    background-image: url(../images/contact-legs.png);
+    background-repeat: no-repeat;
+    background-position: calc(53% + 157px) calc(24% + -102px);
+}
+
+.search__content {
+    padding-top: 395px;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.search__content::before {
+    content: "";
+    background-image: url("../images/contact-searchdog.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 443px;
+    height: 342px;
+    position: absolute;
+    top: calc(50% + -8px);
+    left: calc(50% + -731px);
+}
+
+.search__topic {
+    margin: 0;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 62px;
+    text-align: center;
+    color: var(--main-color);
+    position: relative;
+}
+
+.search__topic::before {
+    content: "";
+    background-image: url("../images/contact-before.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 105px;
+    height: 105px;
+    position: absolute;
+    top: calc(50% - 137px);
+    left: calc(50% + 8px);
+}
+
+
+.search__wrapper {
+    display: flex;
+    width: 1536px;
+    margin: 0 auto;
+    ;
+
+
+}
+
+
+.search__wrapper-iframe {
+    width: 847px;
+    border: none;
+    vertical-align: middle;
+}
